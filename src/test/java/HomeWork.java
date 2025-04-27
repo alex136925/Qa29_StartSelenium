@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class HomeWork {
 
     WebDriver wd;
@@ -47,6 +49,11 @@ public class HomeWork {
         WebElement a3 = wd.findElement(By.cssSelector("[href = '/login']"));
         WebElement a4 = wd.findElement(By.cssSelector("[aria-current = 'page']"));
         WebElement a5 = wd.findElement(By.cssSelector("[placeholder = 'Email']"));
+
+        WebElement a22 = wd.findElement(By.xpath("//input[@placeholder = 'Password']"));
+        WebElement a23 = wd.findElement(By.xpath("//input[starts-with(@placeholder, 'Pas')]"));
+        WebElement a24 = wd.findElement(By.xpath("//input[contains(@placeholder, 'rd')]"));
+
         WebElement a6 = wd.findElement(By.cssSelector("[Placeholder = 'Password']"));
         WebElement a7 = wd.findElement(By.cssSelector("[name = 'login']"));
         WebElement a8 = wd.findElement(By.cssSelector("[name = 'registration']"));
@@ -63,5 +70,23 @@ public class HomeWork {
         WebElement a19 = wd.findElement(By.cssSelector("[charset = 'utf-8']"));
         WebElement a20 = wd.findElement(By.cssSelector("[lang = 'en']"));
         WebElement a21 = wd.findElement(By.cssSelector("[rel = '”shortcut']"));
+
+        //parent
+        //WebElement el14 = wd.findElement(By.xpath("//h1/parent::*"));
+        WebElement el15 = wd.findElement(By.xpath("//h1/parent::div"));
+
+        //ancestor
+        WebElement el16 = wd.findElement(By.xpath("//h1/ancestor::*"));
+        WebElement el17 = wd.findElement(By.xpath("//h1/ancestor::div"));
+        WebElement el18 = wd.findElement(By.xpath("//h1/ancestor::div[2]"));
+
+        //ancestor-or-self
+        List<WebElement> list3 = wd.findElements(By.xpath("//h1/ancestor-or-self::*"));
+
+        //following-sibling
+        List<WebElement> list4 = wd.findElements(By.xpath("//h1/following-sibling::a"));
+
+        //preceding-sibling
+        List<WebElement> list5 = wd.findElements(By.xpath("//a[last()]/preceding-sibling::*"));
     }
 }
