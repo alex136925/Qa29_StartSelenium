@@ -32,15 +32,35 @@ public class HomeWork {
         WebElement tag10 = wd.findElement(By.cssSelector("input"));
         WebElement tag11 = wd.findElement(By.cssSelector("button"));
 
+        //xpath
+        WebElement tag12 = wd.findElement(By.xpath("//meta"));
+        WebElement tag13 = wd.findElement(By.xpath("//link"));
+        WebElement tag14 = wd.findElement(By.xpath("//h1"));
+        WebElement tag15 = wd.findElement(By.xpath("//form"));
+        WebElement tag16 = wd.findElement(By.xpath("//a"));
+        WebElement tag17 = wd.findElement(By.xpath("//input"));
+        WebElement tag18 = wd.findElement(By.xpath("//head"));
+        WebElement tag19 = wd.findElement(By.xpath("//meta"));
+        WebElement tag20 = wd.findElement(By.xpath("//div"));
+        WebElement tag21 = wd.findElement(By.xpath("//input"));
+        WebElement tag22 = wd.findElement(By.xpath("//button"));
+
         // by class
         WebElement div1 = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
         WebElement div2 = wd.findElement(By.cssSelector(".login_login__3EHKB"));
         WebElement div3 = wd.findElement(By.cssSelector(".active"));
         WebElement div4 = wd.findElement(By.cssSelector(".container"));
 
+        //xpath
+        WebElement div5 = wd.findElement(By.xpath("//*[@class = 'navbar-component_nav__1X_4m']"));
+        WebElement div6 = wd.findElement(By.xpath("//*[@class = 'login_login__3EHKB']"));
+        WebElement div7 = wd.findElement(By.xpath("//*[@class = 'active']"));
+        WebElement div8 = wd.findElement(By.xpath("//*[@class = 'container']"));
+
         //by id
 
         WebElement id = wd.findElement(By.cssSelector("#root"));
+        WebElement id1 = wd.findElement(By.xpath("//*[@id = 'root']"));
 
         //by attribute
 
@@ -70,6 +90,30 @@ public class HomeWork {
         WebElement a19 = wd.findElement(By.cssSelector("[charset = 'utf-8']"));
         WebElement a20 = wd.findElement(By.cssSelector("[lang = 'en']"));
         WebElement a21 = wd.findElement(By.cssSelector("[rel = '”shortcut']"));
+
+        //xpath
+        WebElement a32 = wd.findElement(By.xpath("//*[@placeholder = 'Password']"));
+        WebElement a33 = wd.findElement(By.xpath("//*[@href = '/home']"));
+        WebElement a34 = wd.findElement(By.xpath("//*[@href = '/about']"));
+        WebElement a35 = wd.findElement(By.xpath("//*[@href = '/login']"));
+        WebElement a36 = wd.findElement(By.xpath("//*[@placeholder = 'Email']"));
+        WebElement a37 = wd.findElement(By.xpath("//*[@aria-current = 'page']"));
+        WebElement a38 = wd.findElement(By.xpath("//*[@name = 'login']"));
+        WebElement a39 = wd.findElement(By.xpath("//*[@name = 'registration']"));
+        WebElement a40 = wd.findElement(By.xpath("//*[@name = 'email']"));
+        WebElement a41 = wd.findElement(By.xpath("//*[@name = 'viewport']"));
+        WebElement a42 = wd.findElement(By.xpath("//*[@name = 'theme-color']"));
+        WebElement a43 = wd.findElement(By.xpath("//*[@name = 'description']"));
+        WebElement a44 = wd.findElement(By.xpath("//*[@content= 'width=device-width,initial-scale=1']"));
+        WebElement a45 = wd.findElement(By.xpath("//*[@content = '#000000']"));
+        WebElement a46 = wd.findElement(By.xpath("//*[@content = 'Web site created using create-react-app']"));
+        WebElement a47 = wd.findElement(By.xpath("//*[@rel = 'stylesheet']"));
+        WebElement a48 = wd.findElement(By.xpath("//*[@rel = '”shortcut']"));
+        WebElement a50 = wd.findElement(By.xpath("//*[@lang = 'en']"));
+        WebElement a51 = wd.findElement(By.xpath("//*[@charset = 'utf-8']"));
+        WebElement a52 = wd.findElement(By.xpath("//*[contains(@style, 'border: 1px solid black')]"));
+        WebElement a53 = wd.findElement(By.xpath("//*[@href = '”/favicon.ico”']"));
+
 
         //parent
         //WebElement el14 = wd.findElement(By.xpath("//h1/parent::*"));
